@@ -1,0 +1,22 @@
+{
+  "name": "acquire",
+  "version": "0.0.1",
+  "description": "Require functionality inside your project.",
+  
+  "dependencies": {},
+  
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  
+  "devDependencies": {},
+  
+  "repository": "git@github.com:njpatel/acquire.git",
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+}
