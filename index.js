@@ -6,22 +6,9 @@ var map = {};
 
 function findConfig() {
   var searchDirs = [];
-  var cwd = path.normalize(process.cwd());
   var root = path.normalize(path.join(__dirname, '../..')); // Hack
 
-  if (cwd === root) {
-    searchDirs.push(cwd);
-  } else if (cwd.indexOf(root) > -1) {
-    var dir = cwd;
-    while (dir.indexOf(root) > -1) {
-      searchDirs.push(dir);
-      dir = path.normalize(path.join(dir, '..'));
-    }
-  } else {
-    searchDirs.push(cwd);
-    searchDirs.push(root);
-  }
-
+  searchDirs.push(root);
   for (var i = 0; i < searchDirs.length; ++i) {
     try {
       var p = searchDirs[i];
