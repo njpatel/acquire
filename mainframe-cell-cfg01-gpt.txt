@@ -1,0 +1,6 @@
+M-CELL-CFG-01 proof for mf-fable-gpt (deployed version 91134832)
+
+This job used the project configuration.
+
+Configured skill marker: CFG01_SKILL_mf-fable-gpt
+Configured MCP marker: CFG01_MCP_mf-fable-gpt
