@@ -1,0 +1,1 @@
+ingress01 generic channel for mf-fable-gpt
