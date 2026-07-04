@@ -1,0 +1,1 @@
+native opencode claude verification for mf-fable-gpt
