@@ -22,14 +22,22 @@ function findConfig() {
   }
 }
 
-module.exports = function(modName) {
+function lookup(modName) {
   if (map[modName]) {
-    return require(path.join(prefix, map[modName]));
+    return path.join(prefix, map[modName]);
   }
   else {
     var err = util.format('Module %s does not exist in map %s/acquire.json', modName, prefix);
     throw err;
   }
+}
+
+module.exports = function(modName) {
+  return require(lookup(modName));
+}
+
+module.exports.resolve = function(modName) {
+  return lookup(modName);
 }
 
 findConfig();
