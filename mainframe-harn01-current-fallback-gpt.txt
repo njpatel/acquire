@@ -1,0 +1,1 @@
+current opencode fallback verification for mf-fable-gpt
