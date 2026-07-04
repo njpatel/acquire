@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axiom Mainframe — Content Preview</title>
+  <meta name="description" content="Axiom Mainframe content preview page for mf-fable-gpt" />
+  <style>
+    :root {
+      --bg-primary: #0b0d14;
+      --bg-secondary: #12151f;
+      --bg-card: #171b28;
+      --accent: #7c5cff;
+      --accent-glow: rgba(124, 92, 255, 0.35);
+      --text-primary: #f2f3f7;
+      --text-secondary: #9aa0b4;
+      --border: #262b3b;
+      --success: #3ddc97;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: radial-gradient(circle at top, #171c2c 0%, var(--bg-primary) 60%);
+      color: var(--text-primary);
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header.hero {
+      text-align: center;
+      padding: 40px 20px 56px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .brand .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 8px var(--success);
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin: 0 0 12px;
+      background: linear-gradient(120deg, #f2f3f7, #b7aeff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .marker-card {
+      margin: 40px auto 0;
+      max-width: 640px;
+      background: var(--bg-card);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 0 40px var(--accent-glow);
+      text-align: center;
+    }
+
+    .marker-label {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .marker-value {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--success);
+      word-break: break-word;
+    }
+
+    section.content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 56px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .meta-table {
+      margin-top: 48px;
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .meta-table th,
+    .meta-table td {
+      text-align: left;
+      padding: 14px 18px;
+      font-size: 0.92rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-table th {
+      color: var(--text-secondary);
+      font-weight: 500;
+      width: 220px;
+    }
+
+    .meta-table tr:last-child th,
+    .meta-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    footer {
+      margin-top: 64px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    code {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="brand"><span class="dot"></span> Axiom Mainframe</div>
+      <h1>Content Preview</h1>
+      <p class="subtitle">
+        Static preview surface for <code>mf-fable-gpt</code>, rendered at build
+        version <code>f65a28ea</code>. This page confirms that content is
+        visibly rendered and reachable without any server-side dependencies.
+      </p>
+
+      <div class="marker-card">
+        <div class="marker-label">Visibility Marker</div>
+        <div class="marker-value">CONTENT01_VISIBLE_mf-fable-gpt</div>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="card">
+        <h2>Static &amp; Self-Contained</h2>
+        <p>
+          No external scripts, fonts, or stylesheets are required. Every
+          asset needed to render this page is inlined directly in this
+          document.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Deterministic Output</h2>
+        <p>
+          The page is generated once and served as-is, guaranteeing the
+          same visible content on every load for verification tooling.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Verification Ready</h2>
+        <p>
+          The visibility marker above is rendered in plain text so it can
+          be located directly in the page's DOM output.
+        </p>
+      </div>
+    </section>
+
+    <table class="meta-table">
+      <tbody>
+        <tr>
+          <th>Project</th>
+          <td>mf-fable-gpt</td>
+        </tr>
+        <tr>
+          <th>Version</th>
+          <td>f65a28ea</td>
+        </tr>
+        <tr>
+          <th>Proof</th>
+          <td>M-CELL-CONTENT-01</td>
+        </tr>
+        <tr>
+          <th>Rendering</th>
+          <td>Static HTML, no build step required</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      &copy; Axiom Mainframe — Content Preview for mf-fable-gpt
+    </footer>
+  </div>
+</body>
+</html>
