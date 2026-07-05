@@ -1,0 +1,2 @@
+MEM01_REMEMBERED_RULE_mf-fable-gpt
+Project memory supplied the instruction to create or update mainframe-mem01-memory-gpt.txt at the repository root for M-MEM-01.
