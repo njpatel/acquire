@@ -1,0 +1,3 @@
+Selected skill playbook: M-SKILL-01 proof writer v1.
+The selected skill playbook supplied the instruction for this proof run.
+SKILL01_PLAYBOOK_APPLIED_mf-fable-gpt
