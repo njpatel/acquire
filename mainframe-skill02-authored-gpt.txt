@@ -1,0 +1,2 @@
+SKILL02_AUTHORED_PLAYBOOK_mf-fable-gpt
+This authored UI skill supplied the instruction.
